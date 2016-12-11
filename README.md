@@ -9,9 +9,9 @@ Python Simulated Operating System Environment or PySOE is a closed sandbox envir
 *IF YOU NEED A TUTORIAL ON HOW TO USE THESE, THIS PROGRAM IS NOT FOR YOU*
 
 Apps made by Carson Goodwin (LTEGaming)
--SOEgraph (Adapted from Py-Graph) *Incomplete as of 12/11/16*
--SOEvm *Incomplete as of 12/11/16
--SOEcalc *Incomplete as of 12/11/16*
+SOEgraph (Adapted from Py-Graph) *Incomplete as of 12/11/16*
+SOEvm *Incomplete as of 12/11/16
+SOEcalc *Incomplete as of 12/11/16*
 
 
 Yes, you can infact sell this. Or take the source code and turn it into your own program with minimal work. 
