@@ -7,6 +7,6 @@ When we reach an increment of at least 10, we will update here.
 These increments should also add a new big feature or stability/security features.
 
 # Versions
-0.02b[Current]
+0.02c[Current]
 -Uploaded to github.
 -Initial Program version
