@@ -11,7 +11,7 @@ Python Simulated Operating System Environment or PySOE is a closed sandbox envir
 # Application Ecosystem Library
 *IF YOU NEED A TUTORIAL ON HOW TO USE THESE, THIS PROGRAM IS NOT FOR YOU*
 
-Apps made by Carson Goodwin (LTEGaming)
+#Apps made by Carson Goodwin (LTEGaming)
 
 -SOEgraph (Adapted from Py-Graph) *Incomplete as of 12/11/16*
 
