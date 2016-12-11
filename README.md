@@ -18,7 +18,7 @@ SOEgraph (Adapted from Py-Graph) *Incomplete as of 12/11/16*
 SOEvm *Incomplete as of 12/11/16
 
 SOEcalc *Incomplete as of 12/11/16*
-
+# 
 
 Yes, you can infact sell this. Or take the source code and turn it into your own program with minimal work. 
 
