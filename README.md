@@ -15,7 +15,7 @@ Apps made by Carson Goodwin (LTEGaming)
 
 -SOEgraph (Adapted from Py-Graph) *Incomplete as of 12/11/16*
 
--SOEvm *Incomplete as of 12/11/16
+-SOEvm *Incomplete as of 12/11/16*
 
 -SOEcalc *Incomplete as of 12/11/16*
 # 
