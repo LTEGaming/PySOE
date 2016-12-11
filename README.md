@@ -32,17 +32,26 @@ I don't care that much. It's a BSD license, do what you want.
 
 # Current Commands
 As of 0.02b:
+
 -listcommands: Lists Commands
+
 -help: Lists Commands
+
 -time: Shows System Time
+
 -ver or -version: Shows OS version
+
 -print or -pr: Prints to display
+
 -prog or -programs: Lists all available integrated programs
+
 -ext or -extras: Extra side commands
 
 #
 Extra Commands:
 
 As of 0.02b:
+
 -his or -history: History of PYOS
+
 -beep: Beep
