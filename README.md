@@ -47,9 +47,7 @@ As of 0.02b:
 
 -ext or -extras: Extra side commands
 
-#
-Extra Commands:
-
+# Extra Commands:
 As of 0.02b:
 
 -his or -history: History of PYOS
