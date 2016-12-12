@@ -20,6 +20,7 @@ These increments should also add a new big feature or stability/security feature
 
 -over ~100 new updates and other formatting changes
 
+#
 0.02c[Depreciated]
 
 -Fixed Formatting Issues
