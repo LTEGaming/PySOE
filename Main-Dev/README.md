@@ -14,7 +14,7 @@ These increments should also add a new big feature or stability/security feature
 
 -Revamped program loading system
 
--Made an installer system for 3rd party programs
+-Made an installer system for 3rd party programs *New dependency: progs.txt*
 
 -New "-beep" command functions.
 
