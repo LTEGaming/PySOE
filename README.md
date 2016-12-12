@@ -1,4 +1,4 @@
-# PySOE v0.02c
+# PySOE v0.03a
 Python Simulated Operating System Environment or PySOE is a closed sandbox environment that runs inside *any* Python Interpreter. It's main purpose is to run it's own small ecosystem of apps specifically created for it.
 
 //You probably shouldn't be here//
@@ -31,7 +31,7 @@ I don't care that much. It's a BSD license, do what you want.
 3. Use your Python Interpreter to open main.py
 
 # Current Commands
-As of 0.02c:
+As of 0.03a:
 
 -listcommands: Lists Commands
 
@@ -47,8 +47,10 @@ As of 0.02c:
 
 -ext or -extras: Extra side commands
 
+-inst or -install: Installs a new program into your program list.
+
 # Extra Commands:
-As of 0.02c:
+As of 0.03a
 
 -his or -history: History of PYOS
 
