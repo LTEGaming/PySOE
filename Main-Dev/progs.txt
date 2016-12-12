@@ -1,0 +1,4 @@
+SOEcalc
+SOEgraph
+SOEvm
+butts

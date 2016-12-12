@@ -5,15 +5,15 @@ def cls():
         print("")
 
 def cool():
-    wn = random.randrange(0,21)
+    wn = random.randrange(0,27)
     if wn == 1:
         return "█                Now under New Management!               █" #Avg line to line distance: 56
     elif wn == 2:
-        return "█                         Kappa!                         █" #Eventually I will fix the spacing.
+        return "█                         Kappa!                         █" #Unfortunately, We're using prng to generate these "Random" numbers. Seems like we get the same number a couple times. 
     elif wn == 3:
         return "█                 Now with more sayings!                 █"
     elif wn == 4:
-        return "█                       Plot twist!                      █"
+        return "█                      Plot twist!                       █"
     elif wn == 5:
         return "█      Totally not a virus, Trust me i'm a dolphin!      █"
     elif wn == 6:
@@ -21,7 +21,7 @@ def cool():
     elif wn == 7:
         return "█                       Unsupported!                     █"
     elif wn == 8:
-        return "█            01110111 01101111 01110111 00100001         █"
+        return "█          01110111 01101111 01110111 00100001           █"
     elif wn == 9:
         return "█                    >Install Gentoo!                    █"
     elif wn == 10:
@@ -46,6 +46,18 @@ def cool():
         return "█        EOF inside string starting at line 891743       █"
     elif wn == 20:
         return "█             Everything probably still works!           █"
+    elif wn == 21:
+        return "█Symmet---------------------|----------------------rical!█"
+    elif wn == 22:
+        return "█                IT'S SNOWING OUTSIDE GUYS!              █"
+    elif wn == 23:
+        return "█                     a day old meme                     █"
+    elif wn == 24:
+        return "█                    Oh, FiddleSticks!                   █"
+    elif wn == 25:
+        return "█                       @echo off                        █"
+    elif wn == 26:
+        return "█                     Coded in Batch!                    █"
     else:
         return "█                     Unimplemented!                     █"
     
@@ -53,15 +65,17 @@ def load():
     cls()
     print("▄████████████████████████████████████████████████████████▄")
     print("█▀                                                      ▀█")  
-    print("█                        PySOE                           █")
+    print("█                       PySOE DEV                        █")
     print("█     (Python Simulated Operating System Enviroment)     █")
-    print("█                       v0.02c                           █")
-    print("█                 Updated on 12/11/16                    █")
+    print("█                         v0.03a                         █")
+    print("█                   Updated on 12/11/16                  █")
     print(cool())
     print("█▄                                                      ▄█")
     print("▀████████████████████████████████████████████████████████▀")
     for i in range(7):
         print("")
+    print("Type '-help' to get started.")
+    print("")
     funct()
         
 def funct():
@@ -72,40 +86,66 @@ def funct():
         print("-time: Shows System Time")
         print("-ver or -version: Shows OS version")
         print("-print or -pr: Prints to display")
-        print("-prog or -programs: Lists all available integrated programs")
+        print("-prog or -programs: Lists all available installed programs")
         print("-ext or -extras: Extra side commands")
+        print("-inst or -install: Installs a new program into your program list.")
         print("")
         funct()
     elif func == "-time":
         print(time.asctime())
         print("")
         funct()
+    elif func == "-inst" or func == "-install":
+        print("")
+        print("Welcome to the Program Installer.")
+        print("")
+        print("Please make sure you have the program you want to install in the same directory as pysoe_shell.py")
+        print("")
+        print("What is the name of the program you will install? (Case Sensitive!) or type 'Cancel to cancel.")
+        print("")
+        inst = input("-inst: ")
+        if inst == "cancel" or inst == "Cancel":
+            print()
+            funct()
+        else:
+            f = open("progs.txt","a",encoding='utf-7')
+            f.write("\n")
+            f.write(inst)
+            f.flush()
+            print("")
+            print("Completed Installation Successfully!")
+            print("")
+            funct()
     elif func == "-ver" or func == "-version":
-        print("PY OS v0.02c Created on 12/11/16")
+        print("PySOE v0.03a Created on 12/11/16")
         print("")
         funct()
     elif func == "-print" or func == "-pr":
         print1 = input("-pr: ")
+        print("")
         print(print1)
         print("")
         funct()
     elif func == "-prog" or func == "-programs":
         print("")
         print("Your installed programs are:")
-        print("-soegraph: Primitive Graphing Program")
-        print("-soevm: Python Virtual Machine for PySOE")
-        print("-soecalc: Primitive Calculator Program")
+        f = open("progs.txt")
+        print(f.read())
         print("")
         print("Run a program? Y/N")
         print("")
         progprompt = input(">")
         if progprompt == "y" or progprompt == "Y":
             print("") 
-            print("Input a program name.")
+            print("Input a program name (Case Sensitive) or type 'Cancel' to cancel.")
             prog = input(">")
-            print("Now Loading",prog)
-            print("Unimplemented.")
-            funct()
+            if prog == "cancel" or prog == "Cancel":
+                funct()
+            else:
+                print("")
+                print("Now Loading",prog)
+                time.sleep(2)
+                __import__(prog)
         elif progprompt == "n" or progprompt == "N":
             print("")
             funct()
@@ -115,8 +155,18 @@ def funct():
     elif func == "-ext" or func == "-extras":
         print("")
         print("Extra commands are:")
-        print("-beep: Beep")
+        print("-beep or -boop: Beep")
         print("-his or -history: History of PYOS")
+        print("")
+        funct()
+    elif func == "-beep" or func == "-boop":
+        import winsound
+        print("")
+        Freq = input("Enter Frequency in Hertz: ")
+        Dur = input("Enter Length in Milliseconds: ")
+        winsound.Beep(int(Freq),int(Dur))
+        print("")
+        print("done")
         print("")
         funct()
     elif func == "-his" or func == "-history":
